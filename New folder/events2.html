@@ -1,0 +1,31 @@
+<!--An event handler is a method that will be executed in case of an event-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <p>Try to change me</p>
+    
+</body>
+<script>
+  const p = document.querySelector('p');
+  const button = document.querySelector('button');
+
+    const changeText = () => {
+        p.textContent = 'I have changed because of an event';
+    }
+
+    function alertText(){
+        alert('Fire. We have changed');
+    }
+
+    //No need to use () because we are not calling a function but passing a reference
+    button.onclick = changeText
+    button.onclick = alertText
+</script>
+</html>

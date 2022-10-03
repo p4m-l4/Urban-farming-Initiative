@@ -1,0 +1,25 @@
+<!--An event handler is a method that will be executed in case of an event-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeText()">Click me</button>
+    <p>Try to change me</p>
+    
+</body>
+<script>
+    const changeText = () => {
+        //if js file is targeting html, use ''. otherwise, use double quotes ""
+        
+        const p = document.querySelector('p');
+        p.textContent = 'I changed because of an inline event handler'
+
+        p.style.background = 'green'
+    }
+</script>
+</html>
