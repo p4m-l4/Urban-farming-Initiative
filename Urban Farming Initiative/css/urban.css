@@ -12,6 +12,13 @@
     margin-top: 20px;
 }*/
 * {
-    color: red;
-    text-align: left;
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+
+#footer {
+    height: 290px;
+    max-width: none;
+    background-color: rgb(42, 42, 42);
+
 }
